@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: consumer
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocols:
+    name: dubbo
+    port: -1
+
+server:
+  port: 8080
