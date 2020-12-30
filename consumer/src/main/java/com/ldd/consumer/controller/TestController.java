@@ -19,8 +19,8 @@ public class TestController {
     @Reference
     TestService testService;
 
-    @RequestMapping(value="/hello/{name}",method= RequestMethod.GET)
-    public String sayHello(@PathVariable("name") String name){
+    @RequestMapping(value = "/hello/{name}", method = RequestMethod.GET)
+    public String sayHello(@PathVariable("name") String name) {
         return testService.sayHello(name);
     }
 
